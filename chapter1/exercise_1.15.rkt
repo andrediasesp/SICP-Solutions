@@ -26,4 +26,4 @@
 ;    (a/(3^n) < 0.1  <=> 
 ; <=> a * 10 < (3^n) <=>
 ; <=> (log (a*10)/log 3) < n
-; We can infer that the time and space complexity of the sine function presented is O(log n)
+; We can infer that the time and space complexity of the sine function presented is O(log a)
