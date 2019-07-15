@@ -10,6 +10,8 @@
 (f (lambda (z) (* z (+ z 1))))
 ;6
 
+
 ; (f f) evaluates to:
 ; (f 2) evaluates to:
-; (2 2) which raises an error because it is not a procedure.
+; (2 2) which raises an error because it is not a procedure:
+; application: not a procedure; expected a procedure that can be applied to arguments
