@@ -3,6 +3,7 @@
 (define (inc n) (+ n 1))
 (define (dec n) (- n 1))
 
+;a)
 (define (cont-frac n d k)
   (define (step i)
     (/ (n i)
@@ -12,6 +13,7 @@
               (step (inc i))))))
   (step 1))
 
+;b)
 (define (cont-frac-iter n d k)
   (define (step k result)
     (if (= k 0)
