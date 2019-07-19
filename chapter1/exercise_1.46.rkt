@@ -18,3 +18,13 @@
                            2))) x))
 
 (sqrt 4)
+
+(define (fixed-point f first-guess)
+  (define tolerance 0.00001)
+  ((iterative-improve (lambda (guess)
+                        (let ((next (f guess)))
+                          (< (abs (- guess next)) tolerance)))
+                      f) first-guess))
+
+
+(fixed-point cos 1.0)
