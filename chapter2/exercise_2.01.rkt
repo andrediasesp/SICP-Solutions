@@ -14,7 +14,6 @@
   (newline))
 
 (define (make-rat n d)
-  (define g (gcd n d))
   (define (signal x)
     (if (< x 0)
         -
