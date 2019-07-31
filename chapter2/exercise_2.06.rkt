@@ -31,3 +31,9 @@
 ;One  : (lambda (f) (lambda (x) (f x)))
 ;Two  : (lambda (f) (lambda (x) (f (f x))))
 ;Three: (lambda (f) (lambda (x) (f(f(f x)))))
+
+
+(define (add a b)
+  (lambda (f)
+    (lambda (x)
+      ((a f) ((b f) x)))))
