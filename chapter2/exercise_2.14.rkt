@@ -51,21 +51,19 @@
                 (make-interval (/ 1.0 (upper-bound y))
                                (/ 1.0 (lower-bound y)))))
 
-(define A1 (make-center-width 40000 0.001))
-(define A2 (make-center-width 80000 0.004))
-(define A3 (make-center-width 12000 0.005))
+(define (print-center-percent i)
+  (newline)
+  (display (center i))
+  (display " ± ")
+  (display (percent i))
+  (display "%"))
 
-(center (par1 A1 A2))
-(center (par2 A1 A2))
-(center (par1 A1 A3))
-(center (par2 A1 A3))
-
-(center (par1 A1 A1))
-(center (par2 A1 A1))
-
-(percent (par1 A1 A2))
-(percent (par2 A1 A2))
-(percent (par1 A1 A3))
-(percent (par2 A1 A3))
-
-; The percentages are different on both procedures.
+(define a (make-center-percent 100 1))
+(define b (make-center-percent 150 2))
+; The percentages are different on both procedures.´, so Lem is right
+(print-center-percent a)
+(print-center-percent b)
+(print-center-percent (par1 a a))
+(print-center-percent (par2 a a))
+(print-center-percent (par1 a b))
+(print-center-percent (par2 a b))
