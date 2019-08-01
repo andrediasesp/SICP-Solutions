@@ -17,15 +17,16 @@
 (define (upper-bound x) (cdr x))
 
 (define (positive? x)
-  (or (positive? x) (zero? x)))
+  (or (> x 0) (zero? x)))
 
 (define (negative? x)
-  (or (negative? x) (zero? x)))
+  (or (< x 0) (zero? x)))
 
 (define (sign-interval x)
   (cond ((positive? (lower-bound x)) 1)
         ((negative? (upper-bound x)) -1)
         (else 0)))
+
 
 (define (mul-interval x y)
   (let ((x1 (lower-bound x))
@@ -54,3 +55,6 @@
 
 (mul-interval (make-interval 1 2) (make-interval 3 4))
 (mul-interval (make-interval -1 -2) (make-interval -3 -4))
+(mul-interval (make-interval -1 -2) (make-interval 3 4))
+(mul-interval (make-interval -1 -2) (make-interval -3 4))
+(mul-interval (make-interval -1 0) (make-interval -3 -4))
