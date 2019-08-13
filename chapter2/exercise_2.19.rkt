@@ -29,5 +29,5 @@
 
 (cc 100 us-coins)
 
-;No, the order of the list doesn't matter, the procedure computes all possible combinations. Starting at 1 or 50 is irrelevant in terms of final value because the tree follow
+;No, the order of the list doesn't matter, the procedure computes all possible combinations. Starting at 1 or 50 is irrelevant in terms of final value because the tree follows
 ;all possibles values until it reaches a stopping condition.
