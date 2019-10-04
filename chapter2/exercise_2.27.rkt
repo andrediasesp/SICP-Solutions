@@ -1,8 +1,5 @@
 #lang sicp
 
-#lang sicp
-
-
 (define (deep-reverse x)
   (cond ((null? x) nil)
         ((pair? x)
