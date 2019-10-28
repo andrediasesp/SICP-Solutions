@@ -57,7 +57,7 @@ Both Normal order and Applicative order evaluation don't give the same result in
 ```scheme
 (def (zero x) (- x x))
 ```
-If we call the zero func with the primitive procedure random, in Applicative order we woulde have 
+If we call the zero func with the primitive procedure random, in Applicative order we would have 
 ```scheme
 (zero (random 10)) => (zero 8) => (- 8 8) => 0. 
 ```
