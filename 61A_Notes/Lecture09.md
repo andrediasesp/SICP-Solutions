@@ -17,7 +17,7 @@
 (define remaining-cards butlast)
 ```
 
-This is more work to type in, but the result is much more readable. The auxiliary functions like **rank** are called selectors because they select one component of a multi-part. We take off a little piece out of a certain data type. 
+This is more work to type in, but the result is much more readable. The auxiliary functions like **rank** are called selectors because they select one component of a multi-part. We take off a little piece out of a certain data type.
 
 
 An ***abstract data type*** is one that isn't built into the programming language, one that only exists in the programmers mind.  
@@ -31,12 +31,12 @@ If we want to be thorough about hiding the representation, we need **constructor
 The main data aggregation mechanism that Scheme has is **Lists** which are made of **pairs**.
 
 ```scheme
-;This represents a pair. 
-(make-card 4 'diamond) 
+;This represents a pair.
+(make-card 4 'diamond)
 ```
 
 The constructor for **pairs** in scheme is **cons**. The two selectors are called **car** and **cdr**. A list abstractly is just a **sequence**, formed by *n* pairs. The *car* of each pair is an element of the sequence and the *cdr* is the next pair along, except for the last pair whose *cdr* is the **empty list**.
 
 ___
 
-**Box-and-pointer** diagrams have a **starting arrow** to indicate where the diagram begins. 
+**Box-and-pointer** diagrams have a **starting arrow** to indicate where the diagram begins.
