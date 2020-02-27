@@ -11,7 +11,7 @@ Three keys ideas related to OOP:
 
 We have the concepts of *class* and *instance*.A class represents an overall description of behaviour whereas an instance represents a particular element of that behaviour.
 
-The function *next* presented in this class gives the next number in some sorte of sequence. For an object c2 if we call the function next on that object n times, the number n is returned. We are outside the definition of Functional programming because each time we call next we give a different result. We are entering a new realm, called **local state**. Local means **each object has its own memory**. That is, if we call next on other object, c3 it starts with 1, it doesn't continue the last number retrieved when applied to c2. 
+The function *next* presented in this class gives the next number in some sorte of sequence. For an object c2 if we call the function next on that object n times, the number n is returned. We are outside the definition of Functional programming because each time we call next we give a different result. We are entering a new realm, called **local state**. Local means **each object has its own memory**. That is, if we call next on other object, c3 it starts with 1, it doesn't continue the last number retrieved when applied to c2.
 
 We conclude that each object has its own counter. That's what **local** means.
 
@@ -34,5 +34,3 @@ If we send an object a message for which there is no method defined in its class
 We moved from the **procedural** view to the **OOP** paradigm. We flipped from the **dispatch** on the types of the objects to the OOP point of view that states that within every type of object we have **all the procedures** that work on it.
 
 From the **Smalltalk**, which you can watch [here](https://youtu.be/Ao9W93OxQ7U) we have the computational perspective of OOP programming. A class instance has a pointer to its class definition. That class definition is stored in the computer having pointers to its **template** that is, the variables that we use to instantiate a new object from that class and to its **method dictionary** that stores all the methods associated with that class.
-
-## Systems with Generic Operations
